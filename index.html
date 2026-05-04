@@ -54,12 +54,12 @@
   .bg {
     position: fixed;
     inset: 0;
-    background-image: url('https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/ffb2d13c-c45c-438d-8434-c7f8ba461491/hero-bg.jpg?t=1777869147');
+    background-image: url('hero-bg.jpg');
     background-size: cover;
     background-position: center 30%;
-    background-attachment: fixed;
+    background-repeat: no-repeat;
     filter: brightness(0.75);
-    z-index: -2;
+    z-index: 0;
     will-change: transform;
   }
 
@@ -68,7 +68,7 @@
     position: fixed;
     inset: 0;
     background: linear-gradient(to bottom, transparent 40%, var(--ash-deep) 100%);
-    z-index: -1;
+    z-index: 1;
     pointer-events: none;
   }
 
@@ -78,7 +78,7 @@
     margin: 0 auto;
     padding: 64px 24px 64px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
   }
 
   /* ── HERO / LOGO ────────────────────────────────────────── */
